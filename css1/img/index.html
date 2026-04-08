@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umay - Portfolyo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navigasyon">
+            <div class="logo"><h3>𓆩𝚄𝚖𝚊𝚢𓆪</h3></div>
+            <ul class="nav-listesi">
+                <li><a href="#anasayfa">Ana Sayfa</a></li>
+                <li><a href="#yetenekler">Yetenekler</a></li>
+                <li><a href="#projeler">Projeler</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+            <button id="tema-buton" class="tema-buton">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section id="anasayfa" class="bolum">
+        <div class="kisi-bilgileri">
+            <img src="umay.jpg" alt="Umay" class="profil-foto">
+            <div class="metin-alani">
+                <h1>Merhaba, <span id="daktilo-metin"></span></h1>
+                <p>Gümüşhane Üniversitesi Bilgisayar Programcılığı 1. sınıf öğrencisiyim. Web geliştirme öğreniyorum.</p>
+                <button class="iletisim-buton">İletişime Geç</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="yetenekler" class="bolum">
+        <h2>Eğitim & Yetenekler</h2>
+        <div class="egitim-kart">
+            <h3>Gümüşhane Üniversitesi</h3>
+            <p><strong>Bilgisayar Programcılığı - 1. Sınıf</strong></p>
+            <p>İnternet Programcılığı 1, Programlama Dilleri 1, Veritabanı</p>
+        </div>
+        <div class="yetenek-listesi">
+            <div class="yetenek-item">
+                <span>HTML</span>
+                <div class="yetenek-cubugu"><div class="yetenek-seviye html-seviye"></div></div>
+            </div>
+            <div class="yetenek-item">
+                <span>CSS</span>
+                <div class="yetenek-cubugu"><div class="yetenek-seviye css-seviye"></div></div>
+            </div>
+            <div class="yetenek-item">
+                <span>JavaScript</span>
+                <div class="yetenek-cubugu"><div class="yetenek-seviye js-seviye"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projeler" class="bolum">
+        <h2>Projelerim</h2>
+        <div class="filtre-butonlari">
+            <button class="filtre-buton aktif" data-kategori="tum">Tümü</button>
+            <button class="filtre-buton" data-kategori="web">Web</button>
+            <button class="filtre-buton" data-kategori="mobil">Mobil</button>
+        </div>
+        <div id="proje-kartlari" class="proje-kartlari"></div>
+    </section>
+
+    <section id="iletisim" class="bolum">
+        <h2>İletişim</h2>
+        <div class="iletisim-kart">
+            <div class="sosyal-linkler">
+                <a href="mailto:umaykara73@gmail.com" class="sosyal-buton" title="Mail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/kullaniciadiniz" class="sosyal-buton" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="sosyal-buton" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
